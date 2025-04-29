@@ -1,16 +1,16 @@
-import React from 'react'
-import WebRoute from './Routes/WebRoute'
-import AdminRoute from './Routes/AdminRoute'
+import React from "react";
+import WebRoute from "./Routes/WebRoute";
+import AdminRoute from "./Routes/AdminRoute";
 
 const App = () => {
   return (
-    <> 
-    <div>
-    <WebRoute />
-    <AdminRoute />
-    </div>
+    <>
+      <div className="">
+        <WebRoute />
+        <AdminRoute />
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

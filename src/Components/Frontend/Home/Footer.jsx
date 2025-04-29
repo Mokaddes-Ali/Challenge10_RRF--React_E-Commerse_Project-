@@ -4,7 +4,6 @@ import logo from '../../../assets/images/logo.png'
 const Footer = () => {
   return (
     <>
-    
     <footer className="bg-primary py-8 mt-32">
         <div className="container mx-auto px-4">
             <div className="mb-8 flex bg-black -mt-32 rounded-2xl">

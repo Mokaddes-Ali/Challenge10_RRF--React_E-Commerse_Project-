@@ -1,1 +1,73 @@
 @import "tailwindcss";
+
+ /* Satoshi Font */
+ @font-face {
+    font-family: 'Satoshi';
+    src: url( '{{"./assets/fonts/Satoshi-Regular.woff2" }}') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url( '{{"./assets/fonts/Satoshi-Bold.woff2" }}') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* Integral Font */
+  @font-face {
+    font-family: 'Integral CF';
+    src: url('{{ "./assets/fonts/IntegralCF-Regular.woff2"}}') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Integral CF';
+    src: url('{{ "./assets/fonts/IntegralCF-Bold.woff2" }}') format('woff2');
+    font-weight: 700;
+    font-size: normal;
+  }
+  
+  
+  @theme{
+    --font-integral: 'Integral CF', sans-serif;
+    --font-satoshi: 'Satoshi', sans-serif;
+  }
+
+  @layer base {
+    body{
+       @apply bg-white font-satoshi p-0 m-0;
+    }
+  }
+
+  @layer components {
+    .custom-container{
+      @apply lg:w-[1240px] mx-auto w-[90%]
+    }
+    .flex-center{
+        @apply flex justify-center items-center
+    }
+
+    .menu-text{
+      @apply text-black font-satoshi text-base not-italic font-normal leading-none
+
+    }
+
+    .common-button {
+      @apply flex w-[210px] h-[52px] px-[54px] py-[16px] justify-center items-center gap-[12px] shrink-0 rounded-[62px] bg-black text-white;
+    }
+
+    .btn-text {
+      @apply text-white font-satoshi text-base not-italic font-medium leading-none;
+    }
+    .product-card {
+
+        @apply bg-white border-2 border-hidden;
+      /* background-color: var(--color-white);
+      border-radius: var(--rounded-lg);
+      padding: var(--spacing-6);
+      box-shadow: var(--shadow-xl); */
+    }
+  }
