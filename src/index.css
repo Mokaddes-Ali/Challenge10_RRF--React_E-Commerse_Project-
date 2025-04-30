@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+
+.leading-trim-both {
+  leading-trim: both;
+}
+
+.text-edge-cap {
+  text-edge: cap;
+}
+
+
  /* Satoshi Font */
  @font-face {
     font-family: 'Satoshi';
@@ -61,6 +71,10 @@
 
     .btn-text {
       @apply text-white font-satoshi text-base not-italic font-medium leading-none;
+    }
+
+    .hero-number {
+      @apply text-black font-satoshi text-[40px] not-italic font-bold leading-none;
     }
     .product-card {
 
