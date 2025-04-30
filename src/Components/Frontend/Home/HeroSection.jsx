@@ -3,8 +3,8 @@ import React from "react";
 const HeroSection = () => {
   return (
     <>
-      <div className="lg:w-[1440px] relative">
-        <div className="flex">
+      <div className="lg:w-[1440px] ">
+        <div className="flex relative">
           {/* Left Side */}
           <div className="absolute left-[98px] top-[190px] w-5/12 custom-container">
             {/* Text */}
