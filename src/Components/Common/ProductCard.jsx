@@ -4,16 +4,12 @@ const ProductCard = ({ product }) => {
   const { title, price, comparePrice, rating, image } = product;
 
   return (
-    <div className="bg-white shadow-md rounded-xl p-4 w-[300px] hover:scale-105 transition-transform duration-300">
+    <div className="bg-white rounded-xl p-4 w-[296px] h-[444px] hover:scale-105 transition-transform duration-300">
       <div className="w-full h-[444px] bg-gray-100 flex items-center justify-center overflow-hidden rounded-lg">
         <img
-          src={
-            product.image
-              ? product.image
-              : "https://via.placeholder.com/292x444?text=292x444+Image"
-          }
+          src={product.image}
           alt="https://via.placeholder.com/292x444?text=292x444+Image"
-          className="object-cover w-full h-full"
+          className="w-full h-full"
         />
       </div>
       <h2 className="mt-3 font-semibold text-lg text-gray-800">{title}</h2>
